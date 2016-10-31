@@ -3,11 +3,32 @@ import java.util.Scanner;
 public class Banking {
 
 	public static void main(String[] args) {
+		double checking, savings;
+		
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("please enter first, middle, and last name");
 		String name = keyboard.nextLine();
 		
+		//For sake of lack of prior account info, checking and savings equal 500 dollars
+		checking = 500;
+		savings = 500;
+		
+		System.out.println("Amount to deposit into checking account");
+		checking = keyboard.nextDouble()+checking;
+		System.out.println("Amount to deposit into savings account");
+		savings = keyboard.nextDouble()+savings;
+		
+		System.out.println("Amount to withdraw from savings account");
+		savings = savings-keyboard.nextDouble();
+		System.out.println("Amount to withdraw from checking account");
+		checking = checking-keyboard.nextDouble();
+		
 		keyboard.close();
+		
+		System.out.println("Hello " + name +", the amount in each of your accounts is as follows");
+		System.out.println("Amount in checking: " + checking);
+		System.out.println("Amount in savings: " + savings);
+		
 
 	}
 

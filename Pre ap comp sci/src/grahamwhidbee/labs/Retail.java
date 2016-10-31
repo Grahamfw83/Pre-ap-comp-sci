@@ -8,7 +8,7 @@ public class Retail {
 		
 		System.out.println("Enter sales price");
 		double price = keyboard.nextDouble();
-		
+		keyboard.close();
 		System.out.println("Original Price " + price);
 		discountAmount = .2;
 		reducedPrice = price*discountAmount;
