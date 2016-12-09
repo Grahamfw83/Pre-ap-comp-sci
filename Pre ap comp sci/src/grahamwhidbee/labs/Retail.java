@@ -22,7 +22,7 @@ public class Retail {
 		reducedPrice = reducedPrice + tax;
 		System.out.println("Total with tax " + reducedPrice);
 		
-		
+		keyboard.close();
 		
 		
 		
