@@ -11,6 +11,7 @@ public class MileTimeCalculator {
 		minutes = avgMileTime.substring(0);
 		tempSeconds = avgMileTime.indexOf(":");
 		seconds = avgMileTime.substring((int) tempSeconds+1);
+		System.out.println("do you even understand that you are the ");
 		
 		
 		
